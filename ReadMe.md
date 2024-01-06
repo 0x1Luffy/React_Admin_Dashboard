@@ -1,7 +1,7 @@
 
 # React Admin Dashboard
 
-![Project Image](https://i.ibb.co/9TVV1d9/React-Admin-Pannel-Chetan-Kesare.png)
+<center>![Project Image](https://i.ibb.co/9TVV1d9/React-Admin-Pannel-Chetan-Kesare.png)</center>
 
 A responsive and customizable React Admin Dashboard built with React, TypeScript, SCSS, Material-UI, and hosted on Vercel.
 
