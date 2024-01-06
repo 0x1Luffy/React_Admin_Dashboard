@@ -1,7 +1,7 @@
 
 # React Admin Dashboard
 
-![Project Image](url/to/your/project/image.png)
+![Project Image](https://github.com/0x1Luffy/React_Admin_Dashboard/blob/master/public/ReactAdminPannel@ChetanKesare.png)
 
 A responsive and customizable React Admin Dashboard built with React, TypeScript, SCSS, Material-UI, and hosted on Vercel.
 
