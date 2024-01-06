@@ -1,50 +1,55 @@
+<div align="center">
 
-# React Admin Dashboard
+  # React Admin Dashboard
 
-<center>![Project Image](https://i.ibb.co/9TVV1d9/React-Admin-Pannel-Chetan-Kesare.png)</center>
+  ![Project Image](https://i.ibb.co/9TVV1d9/React-Admin-Pannel-Chetan-Kesare.png)
 
-A responsive and customizable React Admin Dashboard built with React, TypeScript, SCSS, Material-UI, and hosted on Vercel.
+  A responsive and customizable React Admin Dashboard built with React, TypeScript, SCSS, Material-UI, Recharts, and hosted on Vercel.
 
-## Demo
+  ## Demo
 
-Check out the live demo [here](https://your-vercel-app-url.vercel.app).
+  Check out the live demo [here](https://your-vercel-app-url.vercel.app).
 
-## Features
+  ## Features
 
-- **Responsive Design:** Ensure a seamless experience across various devices.
-- **Material-UI Components:** Utilize Material-UI for a consistent and polished UI.
-- **TypeScript:** Leverage TypeScript for a statically-typed and more maintainable codebase.
-- **SCSS Styling:** Use SCSS for enhanced styling capabilities and maintainability.
-- **Vercel Hosting:** Deployed and hosted on Vercel for easy accessibility.
+  - **Responsive Design:** Ensure a seamless experience across various devices.
+  - **Material-UI Components:** Utilize Material-UI for a consistent and polished UI.
+  - **Recharts for Graphs:** Used Recharts for graphical representation and charting.
+  - **TypeScript:** Leverage TypeScript for a statically-typed and more maintainable codebase.
+  - **SCSS Styling:** Use SCSS for enhanced styling capabilities and maintainability.
+  - **Vercel Hosting:** Deployed and hosted on Vercel for easy accessibility.
 
-## Installation
+  ## Installation
 
-1. Clone the repository:
+  1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/ox1Luffy/react-admin-dashboard.git
-   ```
+     ```bash
+     git clone https://github.com/your-username/react-admin-dashboard.git
+     ```
 
-2. Install dependencies:
+  2. Install dependencies:
 
-   ```bash
-   cd react-admin-dashboard
-   npm install
-   ```
+     ```bash
+     cd react-admin-dashboard
+     npm install
+     ```
 
-3. Run the development server:
+  3. Run the development server:
 
-   ```bash
-   npm start
-   ```
+     ```bash
+     npm start
+     ```
 
-4. Open your browser and visit [http://localhost:3000](http://localhost:3000).
+  4. Open your browser and visit [http://localhost:3000](http://localhost:3000).
 
-## Usage
+  ## Usage
 
-- Customize the dashboard components in the `src` directory according to your project requirements.
-- Add or modify pages, components, and styles as needed.
+  - Customize the dashboard components in the `src` directory according to your project requirements.
+  - Utilize Recharts for graphical representation – see `src/components/Charts.tsx`.
+  - Add or modify pages, components, and styles as needed.
 
-## Contributing
+  ## Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests.
+  Contributions are welcome! Feel free to open issues or submit pull requests.
+
+</div>
