@@ -1,40 +1,44 @@
-import { DataGrid, GridColDef, GridToolbar, GridValueGetterParams } from "@mui/x-data-grid";
-import "./dataTable.scss"
-import { Line } from "recharts";
+import {
+  DataGrid,
+  GridColDef,
+  GridToolbar,
+} from "@mui/x-data-grid";
+import "./dataTable.scss";
 import { Link } from "react-router-dom";
+// import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 type Props = {
-    columns: GridColDef[],
-    rows:object[],
-    slug:string;
-}
-const DataTable = (props:Props) => {
+  columns: GridColDef[];
+  rows: object[];
+  slug: string;
+};
 
-    const handleDelete = (id:number) =>{
-        console.log(id + "has Been Deleted!")
-    }
+const DataTable = (props: Props) => {
 
-        const actionColumn:GridColDef = {
-            field:"action",
-            headerName:"Action",
-            width:200,
-            renderCell:(params) =>{
-                return(
-                    <div className="action">
-                        <Link to={`/${props.slug}/${params.row.id}`}>
-                        <img src="/view.svg" alt="" />
-                        </Link>
-                        <div className="delete" onClick={()=>handleDelete(params.row.id)}>
-                            <img src="/delete.svg" alt="" />
-                        </div>
-                    </div>
-                );
-            },
-        };
+  const handleDelete = (id: number) => {
+  };
+
+  const actionColumn: GridColDef = {
+    field: "action",
+    headerName: "Action",
+    width: 200,
+    renderCell: (params) => {
+      return (
+        <div className="action">
+          <Link to={`/${props.slug}/${params.row.id}`}>
+            <img src="/view.svg" alt="" />
+          </Link>
+          <div className="delete" onClick={() => handleDelete(params.row.id)}>
+            <img src="/delete.svg" alt="" />
+          </div>
+        </div>
+      );
+    },
+  };
 
   return (
     <div className="dataTable">
-        <DataGrid
+      <DataGrid
         className="dataGrid"
         rows={props.rows}
         columns={[...props.columns, actionColumn]}
@@ -45,12 +49,12 @@ const DataTable = (props:Props) => {
             },
           },
         }}
-        slots={{toolbar:GridToolbar}}
+        slots={{ toolbar: GridToolbar }}
         slotProps={{
-            toolbar:{
-                showQuickFilter:true,
-                quickFilterProps: { debounceMs:500},
-            }
+          toolbar: {
+            showQuickFilter: true,
+            quickFilterProps: { debounceMs: 500 },
+          },
         }}
         pageSizeOptions={[5]}
         checkboxSelection
@@ -60,7 +64,7 @@ const DataTable = (props:Props) => {
         disableColumnSelector
       />
     </div>
-  )
-}
+  );
+};
 
-export default DataTable
+export default DataTable;
