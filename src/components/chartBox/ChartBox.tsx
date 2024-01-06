@@ -11,15 +11,15 @@ type Props = {
     percentage: number;
     chartData: object[];
 }
-const ChartBox = (props) => {
+const ChartBox = (props: Props) => {
   return (
     <div className="chartBox">
         <div className="boxInfo">
             <div className="title">
                 <img src={props.icon} alt="" />
-                <span>props.title</span>
+                <span>{props.title}</span>
             </div>
-            <h1>props.number</h1>
+            <h1>{props.number}</h1>
             <Link to="/" style={{color:props.color}}>View All</Link>
         </div>
         <div className="chartInfo">
@@ -37,7 +37,7 @@ const ChartBox = (props) => {
       </ResponsiveContainer>
             </div>
             <div className="text">
-                <span className="percentage" style={{color:props.percentage<0 ? "tomato" : "limegreen"}}>{props.percentage}</span>
+                <span className="percentage" style={{color:props.percentage<0 ? "tomato" : "limegreen"}}>{props.percentage}%</span>
                 <span className="duration">this month</span>
             </div>
         </div>
