@@ -8,7 +8,7 @@
 
   ## Demo
 
-  Check out the live demo [here](https://your-vercel-app-url.vercel.app).
+  Check out the live demo [here](https://react-admin-dashboard-pink.vercel.app/).
 
   ## Features
 
