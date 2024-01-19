@@ -1,3 +1,4 @@
+import { inject } from '@vercel/analytics';
 import Home from "./pages/home/Home"
 import {
   createBrowserRouter,
@@ -13,7 +14,7 @@ import Login from "./pages/login/Login";
 import "./styles/global.scss"
 function App() {
 
-
+  inject();
   const  Layout = ()=>{
     return (
       <div className="main">
